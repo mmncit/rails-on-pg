@@ -1,24 +1,31 @@
-# README
+# Template for Ruby on Rails using PostgreSQL
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Description
 
-Things you may want to cover:
+This project is a Ruby on Rails application that utilizes a PostgreSQL database.
 
-* Ruby version
+## Getting Started
 
-* System dependencies
+To get started with this project, follow the steps below:
 
-* Configuration
+1. Clone the repository to your local machine.
+2. Navigate to the project directory.
+3. Copy the `.env.example` file and rename it to `.env`.
+4. Open the `.env` file in a text editor.
+5. Replace the placeholder values with the appropriate values for your environment.
+   - For example, if your PostgreSQL database username is `myuser` and password is `mypassword`, update the `DATABASE_USERNAME` and `DATABASE_PASSWORD` variables accordingly.
+6. Save the `.env` file.
 
-* Database creation
+## Usage
 
-* Database initialization
+### Apply database changes
 
-* How to run the test suite
+```bash
+bundle exec rails db:migrate
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Run the server
 
-* Deployment instructions
-
-* ...
+```bash
+bundle exec rails server
+```
